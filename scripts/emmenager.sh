@@ -25,6 +25,9 @@ for UTILISATEUR in $(ls /home); do
   chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
 done
 
+echo ":: Configuration de Vim."
+cat $CWD/../vim/vimrc > /etc/vimrc
+
 echo 
 
 exit 0
