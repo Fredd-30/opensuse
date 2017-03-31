@@ -1,0 +1,23 @@
+# ~/.bash_aliases pour les utilisateurs
+
+# Alias
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ..='cd ..'
+alias ...='cd ../..'
+
+# PS1
+VERT='\[\033[0;32m\]'
+BLANC='\[\033[1;37m\]'
+NC='\[\033[0m\]'
+PS1="$VERT[$BLANC\u$NC@$BLANC\h$NC:$BLANC\W$VERT] \$ $NC"
+
+# Vim 
+EDITOR=vim
+VISUAL=$EDITOR
+export EDITOR VISUAL
+
+
+
+
