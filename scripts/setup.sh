@@ -31,7 +31,7 @@ echo
 echo "Configuring Xterm for users"
 cat $CWD/../xterm/Xresources > /etc/skel/.Xresources
 for UTILISATEUR in $(ls /home); do
-  cat $CWD/../xterm/Xresources > /home/$UTILISATEUR/.Xresouces
+  cat $CWD/../xterm/Xresources > /home/$UTILISATEUR/.Xresources
   chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
 done
 echo
