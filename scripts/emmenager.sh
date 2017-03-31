@@ -33,6 +33,9 @@ done
 echo ":: Configuration de Vim."
 cat $CWD/../vim/vimrc > /etc/vimrc
 
+echo ":: Suppression des dépôts de téléchargement préconfigurés."
+#zypper repos | grep Yes | cut -f3 -d '|' | sed -e "s/ //" | awk '{print "zypper rr " $1}' 
+
 echo 
 
 exit 0
