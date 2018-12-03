@@ -1,0 +1,44 @@
+=======================
+Notes sur OpenSUSE Leap
+=======================
+
+Démarrage : appuyer sur F2 pour définir la langue
+
+Rôle système : Personnalisé
+
+Cliquer sur Système de base amélioré, ce qui décoche tout sauf Système de base.
+
+Partitionnement en mode expert > Démarrer avec la proposition actuelle.
+
+Cliquer sur le disque (sda) à gauche.
+
+Supprimer l'une après l'autre les partitions prédéfinies.
+
+Partition /boot :
+
+Ajouter > Taille personnalisée : 500 MiB
+
+Rôle : Operating System
+
+Système de fichiers : ext2
+
+Point de montage : /boot
+
+Partition / :
+
+Ajouter > Taille personnalisée = Taille maximale - taille de la swap
+
+Rôle : Operating System
+
+Système de fichiers : ext4
+
+Point de montage : /
+
+Partition swap : 
+
+Ajouter > Taille maximale (restant)
+
+Rôle : swap
+
+
+
