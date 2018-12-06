@@ -66,6 +66,18 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Pour l'instant on n'utilise que l'IPv4
+if ! grep ipv6.disable=1 /etc/default/grub > /dev/null ; then
+  echo "::"
+  echo -e ":: Désactivation de l'IPv6... \c"
+  sleep $DELAY
+  sed -i -e 's/quiet showopts/quiet ipv6.disable=1 showopts/g' /etc/default/grub
+  grub2-mkconfig -o /boot/grub2/grub.cfg >> $LOG 2>&1
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
 echo
 
 exit 0
