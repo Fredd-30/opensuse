@@ -1,0 +1,14 @@
+# KDE
+plasma5-session
+
+# Traductions
+plasma-framework-lang
+plasma-nm5-lang
+plasma5-desktop-lang
+plasma5-integration-plugin-lang
+plasma5-workspace-lang
+
+# Gestionnaire de connexion
+kcm_sddm
+kcm_sddm-lang
+sddm

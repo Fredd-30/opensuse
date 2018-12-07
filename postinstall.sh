@@ -169,6 +169,15 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Installer le bureau KDE et les applications
+echo "::"
+echo -e ":: Installation du bureau KDE et des applications... \c"
+BUREAU=$(egrep -v '(^\#)|(^\s+$)' $CWD/config/pkglists/bureau-kde.txt)
+zypper --non-interactive install --no-recommends $BUREAU >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0
