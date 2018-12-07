@@ -121,6 +121,28 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Supprimer les paquets inutiles listés dans config/pkglists/cholesterol.txt
+echo "::"
+echo -e ":: Suppression des paquets inutiles... \c"
+CHOLESTEROL=$(egrep -v '(^\#)|(^\s+$)' $CWD/config/pkglists/cholesterol.txt)
+for PAQUET in $CHOLESTEROL; do
+  if rpm -q $PAQUET 2>&1 > /dev/null ; then
+    zypper --non-interactive remove $PAQUET >> $LOG 2>&1
+  fi
+done
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
+# Installer les outils Linux listés dans config/pkglists/outils-linux.txt
+echo "::"
+echo -e ":: Installation des outils système Linux... \c"
+PAQUETS=$(egrep -v '(^\#)|(^\s+$)' $CWD/config/pkglists/outils-linux.txt)
+zypper --non-interactive install $PAQUETS >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c" 
+sleep $DELAY
+echo
+
 # Installer le serveur graphique X11
 echo "::"
 echo -e ":: Installation du serveur graphique X11... \c"

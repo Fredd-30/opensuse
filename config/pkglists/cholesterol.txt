@@ -1,0 +1,6 @@
+# Paquets inutiles
+
+# Système
+chrony
+postfix
+
