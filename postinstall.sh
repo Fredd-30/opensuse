@@ -56,7 +56,6 @@ echo
 sleep $DELAY
 
 # Personnalisation du shell Bash pour root
-echo "::"
 echo -e ":: Configuration du shell Bash pour l'administrateur... \c"
 sleep $DELAY
 cat $CWD/config/bash/root-bashrc > /root/.bashrc
@@ -73,15 +72,6 @@ for UTILISATEUR in $(ls /home); do
   cat $CWD/config/bash/user-alias > /home/$UTILISATEUR/.alias
   chown $UTILISATEUR:users /home/$UTILISATEUR/.alias
 done
-echo -e "[${VERT}OK${GRIS}] \c"
-sleep $DELAY
-echo
-
-# Quelques options pratiques pour Vim
-echo "::"
-echo -e ":: Configuration de Vim... \c"
-sleep $DELAY
-cat $CWD/config/vim/vimrc > /etc/vimrc
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
@@ -140,6 +130,15 @@ echo -e ":: Installation des outils système Linux... \c"
 PAQUETS=$(egrep -v '(^\#)|(^\s+$)' $CWD/config/pkglists/outils-linux.txt)
 zypper --non-interactive install $PAQUETS >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c" 
+sleep $DELAY
+echo
+
+# Quelques options pratiques pour Vim
+echo "::"
+echo -e ":: Configuration de Vim... \c"
+sleep $DELAY
+cat $CWD/config/vim/vimrc > /etc/vimrc
+echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
