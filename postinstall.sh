@@ -69,6 +69,10 @@ echo "::"
 echo -e ":: Configuration du shell Bash pour les utilisateurs... \c"
 sleep $DELAY
 cat $CWD/config/bash/user-alias > /etc/skel/.alias
+for UTILISATEUR in $(ls /home); do
+  cat $CWD/config/bash/user-alias > /home/$UTILISATEUR/.alias
+  chown $UTILISATEUR:users /home/$UTILISATEUR/.alias
+done
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
@@ -108,6 +112,28 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Installer le serveur graphique X11
+echo "::"
+echo -e ":: Installation du serveur graphique X11... \c"
+zypper --non-interactive install --no-recommends -t pattern x11 >> $LOG 2>&1
+zypper --non-interactive install xdm WindowMaker xorg-x11-fonts >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
+# Configuration du terminal graphique
+echo "::"
+echo -e ":: Configuration du terminal graphique... \c"
+sleep $DELAY
+cat $CWD/config/xterm/Xresources > /root/.Xresources
+cat $CWD/config/xterm/Xresources > /etc/skel/.Xresources
+for UTILISATEUR in $(ls /home); do
+  cat $CWD/config/xterm/Xresources > /home/$UTILISATEUR/.Xresources
+  chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
+done
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
 
 echo
 
