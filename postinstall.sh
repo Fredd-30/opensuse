@@ -115,6 +115,7 @@ echo
 # Mise à jour initiale
 echo "::"
 echo -e ":: Mise à jour initiale du système... \c"
+zypper --gpg-auto-import-keys refresh >> $LOG 2>&1
 zypper update >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
