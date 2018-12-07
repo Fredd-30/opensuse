@@ -1,0 +1,118 @@
+============
+Zypper HOWTO (c) Niki Kovacs, 2019
+============
+
+Ce HOWTO décrit le maniement de Zypper au quotidien.
+
+
+Afficher les options et commandes globales disponibles :
+
+  # zypper
+
+Afficher l'aide pour une commande spécifique :
+
+  # zypper help search
+
+	ou :
+
+  # zypper help list-updates
+
+Afficher les correctifs de sécurité requis :
+
+  # zypper list-updates ( = zypper lu)
+
+Appliquer les correctifs de sécurité :
+
+  # zypper update -t patch ( = zypper up -t patch)
+
+Installer un paquet :
+
+  # zypper install sqlite2 ( = zypper in sqlite2)
+
+La même chose, sans la demande de confirmation :
+
+  # zypper install -y sqlite2 ( = zypper in -y sqlite2)
+
+Installer tous les paquets contenant 'yast*' :
+
+  # zypper in yast*
+
+Supprimer un paquet :
+
+  # zypper remove sqlite2 ( = zypper rm sqlite2)
+
+Supprimer toutes les dépendances du paquet :
+
+  # zypper rm --clean-deps audacious
+
+Rafraîchir l'index des paquets disponibles, si le rafraîchissement automatique
+est désactivé :
+
+  # zypper refresh ( = zypper ref)
+
+Forcer l'actualisation :
+
+  # zypper ref -f
+
+Installer et/ou mettre à jour des paquetages provenant d'un autre fournisseur
+comme Packman :
+
+  # zypper dist-upgrade -r [repo] ( = zypper dup -r [repo])
+
+Dans l'exemple précédent, on affiche les dépôts configurés, puis on utilise
+le numéro de dépôt correspondant, par exemple :
+
+  # zypper repos
+  # | Alias                          | Name                           | Enabled | # Refresh
+  --+--------------------------------+--------------------------------+---------+--------
+  1 | Dépôt_principal_(NON-OSS)      | Dépôt principal (NON-OSS)      | Yes     | No     
+  2 | Dépôt_principal_(OSS)          | Dépôt principal (OSS)          | Yes     | No     
+  3 | Dépôt_principal_de_mise_à_jour | Dépôt principal de mise à jour | Yes     | No     
+  4 | download.nvidia.com-opensuse   | NVIDIA Repository              | Yes     | No     
+  5 | google-chrome                  | google-chrome                  | Yes     | No     
+  6 | packman.inode.at-suse          | Packman Repository             | Yes     | No     
+  # zypper dup -r 6
+
+
+Dépôts de paquets
+-----------------
+
+1) [oss]
+
+Dépôt principal, contenant uniquement des logiciels open source :
+
+	* http://download.opensuse.org/distribution/11.3/repo/oss
+
+Miroir :
+
+	* http://mirror.ovh.net/opensuse/distribution/11.3/repo/oss
+
+2) [non-oss]
+
+Dépôt contenant les logiciels non libres, comme Flashplayer, Java, Opera,
+IPW-Firmware, etc. :
+
+	* http://mirror.ovh.net/opensuse/distribution/11.3/repo/non-oss
+
+Miroir :
+
+	* http://mirror.ovh.net/opensuse/distribution/11.3/repo/non-oss
+
+3) [update]
+
+Dépôt pour les mises à jour de sécurité officielles et de corrections de bogues :
+
+	* http://download.opensuse.org/update/11.3
+
+Miroir :
+
+	* http://mirror.ovh.net/opensuse/update/11.3
+
+4) [contrib] 
+
+Dépôt universel pour les paquetages construits par des tiers :
+
+	* http://download.opensuse.org/repositories/openSUSE:/11.3:/Contrib/standard
+
+
+
