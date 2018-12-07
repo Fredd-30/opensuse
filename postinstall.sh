@@ -22,6 +22,7 @@ VERSION=15.0
 
 # Miroirs de téléchargement
 MIRROR="http://download.opensuse.org"
+NVIDIA="https://download.nvidia.com"
 PACKMAN="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_${VERSION}/"
 
 # Interrompre en cas d'erreur
@@ -99,6 +100,7 @@ zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/oss oss >> $LOG 2>&1
 zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/non-oss non-oss >> $LOG 2>&1
 zypper addrepo $MIRROR/update/leap/$VERSION/oss oss-updates >> $LOG 2>&1
 zypper addrepo $MIRROR/update/leap/$VERSION/non-oss non-oss-updates >> $LOG 2>&1
+zypper addrepo $NVIDIA/opensuse/leap/$VERSION nvidia >> $LOG 2>&1
 zypper addrepo --priority 90 $PACKMAN packman >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
@@ -112,6 +114,8 @@ zypper --non-interactive update >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
+
+exit 0
 
 # Supprimer les paquets inutiles listés dans config/pkglists/cholesterol.txt
 echo "::"
