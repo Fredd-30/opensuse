@@ -1,0 +1,12 @@
+=============
+Install HOWTO (c) Nicolas Kovacs 2019
+=============
+
+Démarrage : appuyer sur F2 pour définir la langue
+
+Rôle système : Personnalisé
+
+Cliquer sur Système de base amélioré, ce qui décoche tout sauf Système de base.
+
+
+

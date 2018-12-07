@@ -1,16 +1,10 @@
-=======================
-Notes sur OpenSUSE Leap
-=======================
+===============
+Partition HOWTO (c) Nicolas Kovacs 2019
+===============
 
-Démarrage : appuyer sur F2 pour définir la langue
+Ce HOWTO décrit le partitionnement manuel d'un poste de travail sous OpenSUSE
+Leap 15.
 
-Rôle système : Personnalisé
-
-Cliquer sur Système de base amélioré, ce qui décoche tout sauf Système de base.
-
-
-Partitionnement
----------------
 
 Si le disque est déjà partitionné en MBR, l'installateur mettra une table de
 partitions MBR. En revanche, en l'absence de table de partitions, on aura une
@@ -102,7 +96,3 @@ Une fois que c'est installé, voici à quoi ça ressemble :
   /dev/sda2       18432  1042431  1024000   500M Système de fichiers Linux
   /dev/sda3     1042432 79685631 78643200  37,5G Système de fichiers Linux
   /dev/sda4    79685632 83886046  4200415     2G Partition d'échange Linux
-
-
-
-
