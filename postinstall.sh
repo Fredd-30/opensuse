@@ -17,6 +17,13 @@ fi
 # Répertoire courant
 CWD=$(pwd)
 
+# Version
+VERSION=15.0
+
+# Miroirs de téléchargement
+MIRROR="http://download.opensuse.org"
+PACKMAN="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_${VERSION}/"
+
 # Interrompre en cas d'erreur
 set -e
 
@@ -86,6 +93,21 @@ if ! grep ipv6.disable=1 /etc/default/grub > /dev/null ; then
   sleep $DELAY
   echo
 fi
+
+# Configurer les dépôts de paquets
+echo "::"
+echo -e ":: Configuration des dépôts de paquets... \c"
+sleep $DELAY
+rm -f /etc/zypp/repos.d/*.repo
+zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/oss oss >> $LOG 2>&1
+zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/non-oss non-oss >> $LOG 2>&1
+zypper addrepo $MIRROR/update/leap/$VERSION/oss oss-updates >> $LOG 2>&1
+zypper addrepo $MIRROR/update/leap/$VERSION/non-oss non-oss-updates >> $LOG 2>&1
+zypper addrepo --priority 90 $PACKMAN packman >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 
 echo
 
