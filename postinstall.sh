@@ -68,10 +68,12 @@ echo "::"
 echo -e ":: Configuration du shell Bash pour les utilisateurs... \c"
 sleep $DELAY
 cat $CWD/config/bash/user-alias > /etc/skel/.alias
-for UTILISATEUR in $(ls /home); do
-  cat $CWD/config/bash/user-alias > /home/$UTILISATEUR/.alias
-  chown $UTILISATEUR:users /home/$UTILISATEUR/.alias
-done
+if [ ! -z "$(ls -A /home)" ]; then
+  for UTILISATEUR in $(ls /home); do
+    cat $CWD/config/bash/user-alias > /home/$UTILISATEUR/.alias
+    chown $UTILISATEUR:users /home/$UTILISATEUR/.alias
+  done
+fi
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
@@ -157,10 +159,12 @@ echo -e ":: Configuration du terminal graphique... \c"
 sleep $DELAY
 cat $CWD/config/xterm/Xresources > /root/.Xresources
 cat $CWD/config/xterm/Xresources > /etc/skel/.Xresources
-for UTILISATEUR in $(ls /home); do
-  cat $CWD/config/xterm/Xresources > /home/$UTILISATEUR/.Xresources
-  chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
-done
+if [ ! -z "$(ls -A /home)" ]; then
+  for UTILISATEUR in $(ls /home); do
+    cat $CWD/config/xterm/Xresources > /home/$UTILISATEUR/.Xresources
+    chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
+  done
+fi
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
