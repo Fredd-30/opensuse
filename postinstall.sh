@@ -66,6 +66,15 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Quelques options pratiques pour Vim
+echo "::"
+echo -e ":: Configuration de Vim... \c"
+sleep $DELAY
+cat $CWD/config/vim/vimrc > /etc/vimrc
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 # Pour l'instant on n'utilise que l'IPv4
 if ! grep ipv6.disable=1 /etc/default/grub > /dev/null ; then
   echo "::"
