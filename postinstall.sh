@@ -112,6 +112,14 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Mise à jour initiale
+echo "::"
+echo -e ":: Mise à jour initiale du système... \c"
+zypper update >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 # Installer le serveur graphique X11
 echo "::"
 echo -e ":: Installation du serveur graphique X11... \c"
