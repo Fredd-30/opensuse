@@ -31,14 +31,15 @@ echo > $LOG
 
 # Supprimer les paquets inutiles 
 CHOLESTEROL=$(egrep -v '(^\#)|(^\s+$)' $CWD/../config/pkglists/cholesterol.txt)
+echo
 for PAQUET in $CHOLESTEROL; do
   if rpm -q $PAQUET 2>&1 > /dev/null ; then
-    echo "::"
     echo -e ":: Suppression du paquet $PAQUET... \c"
     zypper --non-interactive remove --clean-deps $PAQUET >> $LOG 2>&1
     echo -e "[${VERT}OK${GRIS}] \c"
     sleep $DELAY
     echo
+    echo "::"
   fi
 done
 

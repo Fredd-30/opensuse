@@ -1,8 +1,23 @@
 # Paquets inutiles
+
+# Système
+mutt
+
+# KDE
+akregator
+discover
+dragonplayer
 kaddressbook
+kmahjongg
 kmail
+kmines
+kompare
 kontact
+konversation
 korganizer
+kpat
+kreversi
+ksudoku
 
 
 
