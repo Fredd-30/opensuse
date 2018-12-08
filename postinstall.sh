@@ -115,8 +115,6 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
-exit 0
-
 # Supprimer les paquets inutiles listés dans config/pkglists/cholesterol.txt
 echo "::"
 echo -e ":: Suppression des paquets inutiles... \c"
