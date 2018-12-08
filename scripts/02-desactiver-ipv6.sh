@@ -18,7 +18,7 @@ VERT="\033[01;32m"
 GRIS="\033[00m"
 
 # Journal
-LOG=/tmp/postinstall.log
+LOG=/tmp/$(basename "$0" .sh).log
 
 # Pause entre les opérations
 DELAY=1
