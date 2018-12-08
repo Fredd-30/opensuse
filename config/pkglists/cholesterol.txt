@@ -1,6 +1,9 @@
 # Paquets inutiles
+kaddressbook
+kmail
+kontact
+korganizer
 
-# Système
-chrony
-postfix
+
+
 
