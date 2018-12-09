@@ -13,6 +13,7 @@ fi
 # Répertoire courant
 CWD=$(pwd)
 
+
 # Interrompre en cas d'erreur
 set -e
 
@@ -28,6 +29,20 @@ DELAY=1
 
 # Nettoyer le fichier journal
 echo > $LOG
+
+# Supprimer les groupes de paquets
+PATTERNS=$(egrep -v '(^\#)|(^\s+$)' $CWD/../config/pkglists/groupes.txt)
+echo
+for PATTERN in $PATTERNS; do
+  if rpm -q $PATTERN 2>&1 > /dev/null ; then
+    echo -e ":: Suppression du groupe de paquets $PATTERN... \c"
+    zypper --non-interactive remove $PATTERN >> $LOG 2>&1
+    echo -e "[${VERT}OK${GRIS}] \c"
+    sleep $DELAY
+    echo
+    echo "::"
+  fi
+done
 
 # Supprimer les paquets inutiles 
 CHOLESTEROL=$(egrep -v '(^\#)|(^\s+$)' $CWD/../config/pkglists/cholesterol.txt)
