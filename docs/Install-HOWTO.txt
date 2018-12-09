@@ -2,6 +2,13 @@
 Install HOWTO (c) Nicolas Kovacs 2019
 =============
 
+Confection d'une clé USB :
+
+$ sudo dd status=progress if=openSUSE-Leap-15.0-DVD-x86_64.iso of=/dev/sdb bs=1M 3916431360 octets (3,9
+GB, 3,6 GiB) copiés, 889 s, 4,4 MB/s 3736+0 enregistrements lus
+3736+0 enregistrements écrits
+3917479936 octets (3,9 GB, 3,6 GiB) copiés, 1138,28 s, 3,4 MB/s
+
 Démarrage : appuyer sur F2 pour définir la langue
 
 Rôle système : Personnalisé
