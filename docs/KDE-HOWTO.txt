@@ -1,0 +1,25 @@
+=========
+KDE HOWTO
+=========
+
+Configuration de KDE sur OpenSUSE Leap 15.0.
+
+Clic droit sur le bouton du menu > Alternatives > Lanceur d'application
+
+Thème du pointeur de la souris : whiteglass
+
+Applications GNOME > thème du pointeur : whiteglass
+
+Périphériques d'entrée > Souris > Double clic
+
+Effets du bureau : Fenêtres en gélatine
+
+Verrouillage de l'écran : 60 minutes
+
+Konsole : 
+
+  * Thème : Brise
+
+  * Police : Monospace 12
+
+Dolphin : icônes 64 pixels
