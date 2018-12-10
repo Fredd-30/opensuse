@@ -47,6 +47,22 @@ echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
 
+# Configuration du terminal graphique
+echo "::"
+echo -e ":: Configuration du terminal graphique... \c"
+sleep $DELAY
+cat $CWD/../config/xterm/Xresources > /root/.Xresources
+cat $CWD/../config/xterm/Xresources > /etc/skel/.Xresources
+if [ ! -z "$(ls -A /home)" ]; then
+  for UTILISATEUR in $(ls /home); do
+    cat $CWD/../config/xterm/Xresources > /home/$UTILISATEUR/.Xresources
+    chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
+  done
+fi
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+
 echo
 
 exit 0
