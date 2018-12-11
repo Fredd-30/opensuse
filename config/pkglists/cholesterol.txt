@@ -1,16 +1,23 @@
 # Paquets inutiles
 
 # Système
+git-gui
 mutt
 
 # KDE
 akregator
 discover
 dragonplayer
+hugin
 kaddressbook
+kcm_tablet
+kgpg
+kmag
 kmahjongg
 kmail
 kmines
+kmousetool
+knotes
 kompare
 kontact
 konversation
@@ -18,4 +25,5 @@ korganizer
 kpat
 kreversi
 ksudoku
+tigervnc
 
