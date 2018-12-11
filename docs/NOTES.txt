@@ -10,7 +10,7 @@ Articles de blog
 
   [*] OpenSUSE Leap 15.0 en configuration RAID 1
 
-  [ ] OpenSUSE Leap 15.0 - Terminal et Shell
+  [*] OpenSUSE Leap 15.0 - Terminal et Shell
 
   [ ] OpenSUSE Leap 15.0 - Dépôts de paquets
 
