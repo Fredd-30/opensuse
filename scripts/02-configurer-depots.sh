@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 03-configurer-depots.sh
+# 02-configurer-depots.sh
 
 # Exécuter en tant que root
 if [ $EUID -ne 0 ] ; then
@@ -81,6 +81,12 @@ echo
 echo "::"
 echo -e ":: Synchronisation et import des clés GPG... \c"
 zypper --gpg-auto-import-keys refresh >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+echo "::"
+echo -e ":: Mise à jour des paquets... \c"
+zypper --non-interactive update --allow-vendor-change >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo
