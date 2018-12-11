@@ -1,0 +1,22 @@
+=======================
+Notes sur OpenSUSE 15.0
+=======================
+
+
+Articles de blog
+----------------
+
+  [*] Installation d'un poste de travail OpenSUSE Leap 15.0 KDE
+
+  [*] OpenSUSE Leap 15.0 en configuration RAID 1
+
+  [ ] OpenSUSE Leap 15.0 - Terminal et Shell
+
+  [ ] OpenSUSE Leap 15.0 - Dépôts de paquets
+
+  [ ] OpenSUSE Leap 15.0 - Supprimer les paquets inutiles
+
+  [ ] OpenSUSE Leap 15.0 - Configurer KDE
+
+  [ ] OpenSUSE Leap 15.0 - Compléter le bureau
+
