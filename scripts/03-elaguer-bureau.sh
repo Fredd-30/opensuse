@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# 04-elaguer-bureau.sh
+# 03-elaguer-bureau.sh
 
 # Exécuter en tant que root
 if [ $EUID -ne 0 ] ; then
