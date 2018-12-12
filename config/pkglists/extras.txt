@@ -1,0 +1,11 @@
+# Paquets supplémentaires
+
+# Outils système
+iperf
+nmap
+speedtest-cli
+tree
+
+# Internet
+MozillaThunderbird
+MozillaThunderbird-translations-common
