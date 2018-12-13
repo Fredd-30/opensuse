@@ -1,10 +1,25 @@
 # Paquets supplémentaires
 
 # Outils système
+elinks
 iperf
+lftp
+links
+lynx
+man-pages
+man-pages-fr
+man-pages-fr-extra
+mlocate
+ncftp
+net-tools-deprecated
 nmap
+pinfo
+rtorrent
 speedtest-cli
 tree
+unrar
+vim
+whois
 
 # Internet
 MozillaThunderbird

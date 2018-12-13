@@ -2,6 +2,13 @@
 Notes sur OpenSUSE 15.0
 =======================
 
+Paquets introuvables
+--------------------
+
+  [ ] glances
+
+  [ ] recode
+
 
 Articles de blog
 ----------------
@@ -12,7 +19,9 @@ Articles de blog
 
   [*] OpenSUSE Leap 15.0 - Terminal et Shell
 
-  [ ] OpenSUSE Leap 15.0 - Dépôts de paquets
+  [*] OpenSUSE Leap 15.0 - Dépôts de paquets
+
+  [*] OpenSUSE Leap 15.0 et les cartes NVidia
 
   [ ] OpenSUSE Leap 15.0 - Supprimer les paquets inutiles
 
