@@ -18,7 +18,8 @@ set -e
 
 ENTRIESDIR=$CWD/../config/menus
 ENTRIES=$(ls $ENTRIESDIR)
-MENUDIRS="/usr/share/applications"
+MENUDIRS="/usr/share/applications \
+          /usr/share/applications/kde4"
 
 echo
 
