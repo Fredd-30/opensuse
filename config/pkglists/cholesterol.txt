@@ -1,10 +1,4 @@
 # Paquets inutiles
-
-# Système
-git-gui
-mutt
-
-# KDE
 akregator
 discover
 dragonplayer
