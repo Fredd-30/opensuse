@@ -31,3 +31,5 @@ Articles de blog
 
   [ ] Client NTP
 
+  [ ] Imprimante/scanner HP
+
