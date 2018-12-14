@@ -22,6 +22,7 @@ vim
 whois
 
 # KDE
+fontforge
 gos-wallpapers
 plasma5-workspace-wallpapers
 

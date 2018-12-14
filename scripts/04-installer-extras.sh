@@ -43,6 +43,39 @@ for PAQUET in $EXTRAS; do
   fi
 done
 
+# Installer les polices Microsoft
+if [ ! -d /usr/share/fonts/truetype/microsoft ]; then
+  pushd /tmp >> $LOG 2>&1
+  rm -rf /usr/share/fonts/truetype/microsoft
+  rm -rf /usr/share/fonts/truetype/msttcorefonts
+  echo "::"
+  echo -e ":: Installation des polices TrueType Microsoft... \c"
+  wget -c https://www.microlinux.fr/download/webcore-fonts-3.0.tar.gz >> $LOG 2>&1
+  wget -c https://www.microlinux.fr/download/symbol.gz >> $LOG 2>&1
+  mkdir /usr/share/fonts/truetype/microsoft
+  tar xvf webcore-fonts-3.0.tar.gz >> $LOG 2>&1
+  pushd webcore-fonts >> $LOG 2>&1
+  # La police Cambria est un fichier TTC. Si FontForge est disponible, on
+  # l'utilise pour le transformer en deux fichiers TTF.
+  if type fontforge > /dev/null 2>&1; then
+    fontforge -lang=ff -c 'Open("vista/CAMBRIA.TTC(Cambria)"); \
+      Generate("vista/CAMBRIA.TTF");Close();Open("vista/CAMBRIA.TTC(Cambria Math)"); \
+      Generate("vista/CAMBRIA-MATH.TTF");Close();' >> $LOG 2>&1
+    rm vista/CAMBRIA.TTC
+  fi
+  cp fonts/* /usr/share/fonts/truetype/microsoft/
+  cp vista/* /usr/share/fonts/truetype/microsoft/
+  popd >> $LOG 2>&1
+  # Remplacer la police symbol.ttf par une version patchée
+  # https://bugs.winehq.org/show_bug.cgi?id=24099
+  gunzip -c symbol.gz > /usr/share/fonts/truetype/microsoft/symbol.ttf 
+  popd >> $LOG 2>&1
+  fc-cache -f -v >> $LOG 2>&1
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
 echo
 
 exit 0
