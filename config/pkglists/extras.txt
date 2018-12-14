@@ -27,6 +27,7 @@ gos-wallpapers
 plasma5-workspace-wallpapers
 
 # Internet
+enigmail
 flash-player
 MozillaThunderbird
 MozillaThunderbird-translations-common
