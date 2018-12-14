@@ -31,3 +31,5 @@ enigmail
 flash-player
 MozillaThunderbird
 MozillaThunderbird-translations-common
+owncloud-client
+owncloud-client-dolphin
