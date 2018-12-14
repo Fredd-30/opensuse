@@ -42,6 +42,8 @@ transmission-gtk
 transmission-gtk-lang
 
 # Multimédia
+asunder
+asunder-lang
 audacious
 audacious-lang
 audacious-plugins
