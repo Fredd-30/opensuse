@@ -97,6 +97,24 @@ if [ ! -d /usr/share/fonts/apple-fonts ]; then
   echo
 fi
 
+# Installer la police Eurostile
+if [ ! -d /usr/share/fonts/eurostile ]; then
+  cd /tmp
+  rm -rf /usr/share/fonts/eurostile
+  echo "::"
+  echo -e ":: Installation de la police TrueType Eurostile... \c"
+  wget -c --no-check-certificate \
+    https://www.microlinux.fr/download/Eurostile.zip >> $LOG 2>&1
+  unzip Eurostile.zip -d /usr/share/fonts/ >> $LOG 2>&1
+  mv /usr/share/fonts/Eurostile /usr/share/fonts/eurostile
+  fc-cache -f -v >> $LOG 2>&1
+  rm -f Eurostile.zip
+  cd - >> $LOG 2>&1
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
 echo
 
 exit 0
