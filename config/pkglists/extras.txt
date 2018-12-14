@@ -21,6 +21,10 @@ unrar
 vim
 whois
 
+# KDE
+gos-wallpapers
+plasma5-workspace-wallpapers
+
 # Internet
 MozillaThunderbird
 MozillaThunderbird-translations-common
