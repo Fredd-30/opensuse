@@ -50,8 +50,10 @@ if [ ! -d /usr/share/fonts/truetype/microsoft ]; then
   rm -rf /usr/share/fonts/truetype/msttcorefonts
   echo "::"
   echo -e ":: Installation des polices TrueType Microsoft... \c"
-  wget -c https://www.microlinux.fr/download/webcore-fonts-3.0.tar.gz >> $LOG 2>&1
-  wget -c https://www.microlinux.fr/download/symbol.gz >> $LOG 2>&1
+  wget -c --no-check-certificate \
+    https://www.microlinux.fr/download/webcore-fonts-3.0.tar.gz >> $LOG 2>&1
+  wget -c --no-check-certificate \
+    https://www.microlinux.fr/download/symbol.gz >> $LOG 2>&1
   mkdir /usr/share/fonts/truetype/microsoft
   tar xvf webcore-fonts-3.0.tar.gz >> $LOG 2>&1
   pushd webcore-fonts >> $LOG 2>&1
@@ -71,6 +73,25 @@ if [ ! -d /usr/share/fonts/truetype/microsoft ]; then
   gunzip -c symbol.gz > /usr/share/fonts/truetype/microsoft/symbol.ttf 
   popd >> $LOG 2>&1
   fc-cache -f -v >> $LOG 2>&1
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+fi
+
+# Installer les polices Apple
+if [ ! -d /usr/share/fonts/apple-fonts ]; then
+  cd /tmp
+  rm -rf /usr/share/fonts/apple-fonts
+  echo "::"
+  echo -e ":: Installation des polices TrueType Apple... \c"
+  wget -c --no-check-certificate \
+    https://www.microlinux.fr/download/FontApple.tar.xz >> $LOG 2>&1
+  mkdir /usr/share/fonts/apple-fonts
+  tar xvf FontApple.tar.xz >> $LOG 2>&1
+  mv Lucida*.ttf Monaco.ttf /usr/share/fonts/apple-fonts/
+  fc-cache -f -v >> $LOG 2>&1
+  rm -f FontApple.tar.xz
+  cd - >> $LOG 2>&1
   echo -e "[${VERT}OK${GRIS}] \c"
   sleep $DELAY
   echo
