@@ -27,5 +27,6 @@ gos-wallpapers
 plasma5-workspace-wallpapers
 
 # Internet
+flash-player
 MozillaThunderbird
 MozillaThunderbird-translations-common
