@@ -48,7 +48,6 @@ if [ ! -d /usr/share/fonts/truetype/microsoft ]; then
   pushd /tmp >> $LOG 2>&1
   rm -rf /usr/share/fonts/truetype/microsoft
   rm -rf /usr/share/fonts/truetype/msttcorefonts
-  echo "::"
   echo -e ":: Installation des polices TrueType Microsoft... \c"
   wget -c --no-check-certificate \
     https://www.microlinux.fr/download/webcore-fonts-3.0.tar.gz >> $LOG 2>&1
