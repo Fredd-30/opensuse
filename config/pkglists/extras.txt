@@ -28,6 +28,8 @@ plasma5-workspace-wallpapers
 
 # Internet
 enigmail
+filezilla
+filezilla-lang
 flash-player
 MozillaThunderbird
 MozillaThunderbird-translations-common
