@@ -40,3 +40,9 @@ pidgin-plugin-otr
 pidgin-plugin-otr-lang
 transmission-gtk
 transmission-gtk-lang
+
+# Multimédia
+audacious
+audacious-lang
+audacious-plugins
+audacious-plugins-lang
