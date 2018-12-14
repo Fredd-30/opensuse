@@ -48,3 +48,5 @@ audacious
 audacious-lang
 audacious-plugins
 audacious-plugins-lang
+normalize
+transcode
