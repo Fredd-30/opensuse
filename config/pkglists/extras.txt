@@ -35,3 +35,5 @@ MozillaThunderbird
 MozillaThunderbird-translations-common
 owncloud-client
 owncloud-client-dolphin
+transmission-gtk
+transmission-gtk-lang
