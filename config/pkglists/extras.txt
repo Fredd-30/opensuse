@@ -25,6 +25,7 @@ whois
 fontforge
 gos-wallpapers
 plasma5-workspace-wallpapers
+wxWidgets-lang
 
 # Internet
 enigmail
@@ -48,5 +49,7 @@ audacious
 audacious-lang
 audacious-plugins
 audacious-plugins-lang
+audacity
+audacity-lang
 normalize
 transcode
