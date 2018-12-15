@@ -53,3 +53,6 @@ audacity
 audacity-lang
 normalize
 transcode
+vlc
+vlc-codecs
+vlc-lang
