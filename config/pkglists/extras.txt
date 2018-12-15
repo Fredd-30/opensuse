@@ -21,11 +21,14 @@ unrar
 vim
 whois
 
+# Dépendances
+python3-requests
+wxWidgets-lang
+
 # KDE
 fontforge
 gos-wallpapers
 plasma5-workspace-wallpapers
-wxWidgets-lang
 
 # Internet
 enigmail
@@ -51,7 +54,9 @@ audacious-plugins
 audacious-plugins-lang
 audacity
 audacity-lang
+MPlayer
 normalize
+openshot-qt
 transcode
 vlc
 vlc-codecs
