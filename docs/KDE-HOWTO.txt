@@ -6,10 +6,6 @@ Configuration de KDE sur OpenSUSE Leap 15.0.
 
 Clic droit sur le bouton du menu > Alternatives > Lanceur d'application
 
-Thème du pointeur de la souris : Brise neigeuse
-
-Applications GNOME > thème du pointeur : Brise neigeuse
-
 Périphériques d'entrée > Souris > Double clic
 
 Effets du bureau : Fenêtres en gélatine
