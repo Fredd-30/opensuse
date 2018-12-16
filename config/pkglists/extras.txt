@@ -61,3 +61,8 @@ transcode
 vlc
 vlc-codecs
 vlc-lang
+
+# Jeux
+aisleriot
+aisleriot-lang
+aisleriot-themes
