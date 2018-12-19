@@ -73,6 +73,8 @@ transcode
 vlc
 vlc-codecs
 vlc-lang
+winff
+winff-lang
 
 # Jeux
 aisleriot
