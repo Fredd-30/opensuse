@@ -16,4 +16,4 @@ StartupNotify=true
 X-GIO-NoFuse=true
 StartupWMClass=libreoffice-startcenter
 X-KDE-Protocols=file,http,ftp,webdav,webdavs
-
+NoDisplay=true
