@@ -2,33 +2,7 @@
 #
 # 01-personnaliser-shell.sh
 
-# Exécuter en tant que root
-if [ $EUID -ne 0 ] ; then
-  echo "::"
-  echo ":: Vous devez être root pour exécuter ce script."
-  echo "::"
-  exit 1
-fi
-
-# Répertoire courant
-CWD=$(pwd)
-
-# Interrompre en cas d'erreur
-set -e
-
-# Couleurs
-VERT="\033[01;32m"
-GRIS="\033[00m"
-
-# Pause entre les opérations
-DELAY=1
-
-# ... [OK]
-function ok () {
-  echo -e "[${VERT}OK${GRIS}] \c"
-  sleep $DELAY
-  echo
-}
+. source.sh
 
 # Personnalisation du shell Bash pour root
 echo
