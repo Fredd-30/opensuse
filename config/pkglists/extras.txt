@@ -45,6 +45,9 @@ pidgin-plugin-otr-lang
 transmission-gtk
 transmission-gtk-lang
 
+# Bureautique
+scribus
+
 # Graphisme
 inkscape
 inkscape-extensions-gimp
