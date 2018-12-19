@@ -23,14 +23,19 @@ GRIS="\033[00m"
 # Pause entre les opérations
 DELAY=1
 
+# ... [OK]
+function ok () {
+  echo -e "[${VERT}OK${GRIS}] \c"
+  sleep $DELAY
+  echo
+}
+
 # Personnalisation du shell Bash pour root
 echo
 echo -e ":: Configuration du shell Bash pour l'administrateur... \c"
 sleep $DELAY
 cat $CWD/../config/bash/root-bashrc > /root/.bashrc
-echo -e "[${VERT}OK${GRIS}] \c"
-sleep $DELAY
-echo
+ok
 
 # Personnalisation du shell Bash pour les utilisateurs
 echo "::"
@@ -43,18 +48,14 @@ if [ ! -z "$(ls -A /home)" ]; then
     chown $UTILISATEUR:users /home/$UTILISATEUR/.alias
   done
 fi
-echo -e "[${VERT}OK${GRIS}] \c"
-sleep $DELAY
-echo
+ok
 
 # Quelques options pratiques pour Vim
 echo "::"
 echo -e ":: Configuration de Vim... \c"
 sleep $DELAY
 cat $CWD/../config/vim/vimrc > /etc/vimrc
-echo -e "[${VERT}OK${GRIS}] \c"
-sleep $DELAY
-echo
+ok
 
 # Configuration du terminal graphique
 echo "::"
@@ -68,9 +69,7 @@ if [ ! -z "$(ls -A /home)" ]; then
     chown $UTILISATEUR:users /home/$UTILISATEUR/.Xresources
   done
 fi
-echo -e "[${VERT}OK${GRIS}] \c"
-sleep $DELAY
-echo
+ok
 
 echo
 
