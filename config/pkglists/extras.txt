@@ -79,6 +79,10 @@ vlc-lang
 winff
 winff-lang
 
+# Accessoires
+cherrytree
+cherrytree-lang
+
 # Jeux
 aisleriot
 aisleriot-lang
