@@ -45,6 +45,11 @@ pidgin-plugin-otr-lang
 transmission-gtk
 transmission-gtk-lang
 
+# Graphisme
+inkscape
+inkscape-extensions-gimp
+inkscape-lang
+
 # Multimédia
 asunder
 asunder-lang
