@@ -82,6 +82,7 @@ winff-lang
 # Accessoires
 cherrytree
 cherrytree-lang
+kwrite
 
 # Jeux
 aisleriot
