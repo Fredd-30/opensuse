@@ -52,6 +52,8 @@ scribus
 inkscape
 inkscape-extensions-gimp
 inkscape-lang
+librecad
+librecad-parts
 
 # Multimédia
 asunder
