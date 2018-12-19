@@ -64,6 +64,8 @@ audacious-plugins
 audacious-plugins-lang
 audacity
 audacity-lang
+cheese
+cheese-lang
 handbrake-gtk
 handbrake-gtk-lang
 MPlayer
