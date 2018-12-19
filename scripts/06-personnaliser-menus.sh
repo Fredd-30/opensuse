@@ -1,20 +1,8 @@
 #!/bin/bash
 #
-# 05-personnaliser-menus.sh
+# 06-personnaliser-menus.sh
 
-# Exécuter en tant que root
-if [ $EUID -ne 0 ] ; then
-  echo "::"
-  echo ":: Vous devez être root pour exécuter ce script."
-  echo "::"
-  exit 1
-fi
-
-# Répertoire courant
-CWD=$(pwd)
-
-# Interrompre en cas d'erreur
-set -e
+. source.sh
 
 ENTRIESDIR=$CWD/../config/menus
 ENTRIES=$(ls $ENTRIESDIR)
