@@ -17,6 +17,7 @@ VERSION=15.0
 MIRROR="http://download.opensuse.org"
 NVIDIA="https://download.nvidia.com"
 PACKMAN="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_${VERSION}/"
+DVDCSS="http://opensuse-guide.org/repo/openSUSE_Leap_${VERSION}/"
 
 # Interrompre en cas d'erreur
 set -e
@@ -75,6 +76,12 @@ echo
 echo "::"
 echo -e ":: Configuration du dépôt [packman]... \c"
 zypper addrepo --priority 90 $PACKMAN packman >> $LOG 2>&1
+echo -e "[${VERT}OK${GRIS}] \c"
+sleep $DELAY
+echo
+echo "::"
+echo -e ":: Configuration du dépôt [dvdcss]... \c"
+zypper addrepo $DVDCSS dvdcss >> $LOG 2>&1
 echo -e "[${VERT}OK${GRIS}] \c"
 sleep $DELAY
 echo

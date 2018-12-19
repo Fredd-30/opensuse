@@ -68,6 +68,7 @@ cheese
 cheese-lang
 handbrake-gtk
 handbrake-gtk-lang
+libdvdcss2
 MPlayer
 normalize
 openshot-qt
