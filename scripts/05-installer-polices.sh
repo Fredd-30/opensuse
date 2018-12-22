@@ -1,8 +1,16 @@
 #!/bin/bash
 #
 # 05-installer-polices.sh
+#
+# Nicolas Kovacs, 2019
+#
+# Ce script récupère et installe automatiquement une série de polices TrueType
+# propriétaires, notamment les polices Microsoft Windows XP et Vista ainsi
+# qu'une poignée de polices Apple.
 
 . source.sh
+
+echo 
 
 # Installer les polices Microsoft
 if [ ! -d /usr/share/fonts/truetype/microsoft ]; then
