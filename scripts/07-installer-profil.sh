@@ -1,6 +1,11 @@
 #!/bin/bash
 #
 # 07-installer-profil.sh
+#
+# Nicolas Kovacs, 2019
+#
+# Ce script installe une configuration personnalisée pour l'environnement de
+# bureau KDE.
 
 . source.sh
 
