@@ -1,6 +1,14 @@
 #!/bin/bash
 #
 # 02-configurer-depots.sh
+#
+# Nicolas Kovacs, 2019
+#
+# Ce script supprime les dépôts de paquets OpenSUSE Leap configurés par défaut.
+# Il configure automatiquement tous les dépôts de paquets nécessaires pour un
+# poste de travail cohérent et complet. Il importe automatiquement les clés GPG
+# et se charge d'effectuer la mise à jour initiale, en remplaçant certains
+# paquets multimédia par les versions améliorées fournies par le dépôt Packman.
 
 . source.sh
 
