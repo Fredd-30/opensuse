@@ -1,6 +1,13 @@
 #!/bin/bash
 #
 # 01-personnaliser-shell.sh
+#
+# Nicolas Kovacs, 2019
+#
+# Ce script installe une invite de commande personnalisée et une série d'alias
+# pratiques pour root et les utilisateurs du système. Il ajoute une série
+# d'options par défaut à l'éditeur Vim et configure le terminal graphique Xterm
+# de manière plus lisible.
 
 . source.sh
 
