@@ -1,6 +1,11 @@
 #!/bin/bash
 #
 # 04-installer-paquets.sh
+#
+# Nicolas Kovacs, 2019
+#
+# Ce script installe automatiquement tous les paquets listés dans le fichier
+# paquets-supplementaires.txt situé dans le répertoire ../config/pkglists. 
 
 . source.sh
 
