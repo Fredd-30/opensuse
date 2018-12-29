@@ -14,6 +14,7 @@ ncftp
 net-tools-deprecated
 nmap
 pinfo
+recode
 rtorrent
 speedtest-cli
 tree
