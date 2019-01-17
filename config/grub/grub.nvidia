@@ -1,0 +1,7 @@
+GRUB_CMDLINE_LINUX_DEFAULT="resume=/dev/md/swap splash=silent quiet showopts"
+GRUB_CMDLINE_LINUX="nomodeset \
+                    plymouth.enable=0 \
+                    loglevel=3 \
+                    systemd.show_status=1 \
+                    vga=791 \
+                    ipv6.disable=1"
