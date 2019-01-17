@@ -20,11 +20,15 @@ ok
 
 # Double clic
 echo "::"
-echo -e ":: Définition du double clic par défaut... \c"
+echo -e ":: Définition des options globales... \c"
 sleep $DELAY
 cat << EOF > /etc/skel/.config/kdeglobals
 [KDE]
 SingleClick=false
+
+[KDE Action Restrictions][\$i]
+action/switch_user=false
+action/start_new_session=false
 EOF
 ok
 
