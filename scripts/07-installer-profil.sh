@@ -59,12 +59,14 @@ EOF
 ok
 
 # Menu par défaut
-echo "::"
-echo -e ":: Configuration du menu par défaut... \c"
-sleep $DELAY
-sed -i -e 's/org.kde.plasma.kicker/org.kde.plasma.kickoff/g' \
-  /usr/share/plasma/layout-templates/org.opensuse.desktop.defaultPanel/contents/layout.js
-ok
+if [ -f /usr/share/plasma/layout-templates/org.opensuse.desktop.defaultPanel/contents/layout.js ] ; then 
+  echo "::"
+  echo -e ":: Configuration du menu par défaut... \c"
+  sleep $DELAY
+  sed -i -e 's/org.kde.plasma.kicker/org.kde.plasma.kickoff/g' \
+    /usr/share/plasma/layout-templates/org.opensuse.desktop.defaultPanel/contents/layout.js
+  ok
+fi
 
 echo
 
