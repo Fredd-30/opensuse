@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Citrix Receiver
+Categories=Network;
+Exec=/opt/Citrix/ICAClient/wfica
+Terminal=false
+Type=Application
+NoDisplay=true
+MimeType=application/x-ica;
+

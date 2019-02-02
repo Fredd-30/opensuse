@@ -61,6 +61,19 @@ echo -e ":: Configuration du dépôt [dvdcss]... \c"
 zypper addrepo $DVDCSS dvdcss >> $LOG 2>&1
 ok
 
+# Configuration du dépôt [recode]
+echo "::"
+echo -e ":: Configuration du dépôt [recode]... \c"
+zypper addrepo --priority 100 $RECODE recode >> $LOG 2>&1
+ok
+
+# Configuration du dépôt [kde]
+echo "::"
+echo -e ":: Configuration du dépôt [kde]... \c"
+zypper addrepo --priority 100 $KDEXTRA kde >> $LOG 2>&1
+ok
+
+
 # Synchronisation et import des clés GPG
 echo "::"
 echo -e ":: Synchronisation et import des clés GPG... \c"

@@ -1,7 +1,9 @@
 # Paquets supplémentaires
 
 # Outils système
+antiword
 elinks
+exiftool
 iperf
 lftp
 links
@@ -14,10 +16,12 @@ ncftp
 net-tools-deprecated
 nmap
 pinfo
+recode
 rtorrent
 speedtest-cli
 tree
 unrar
+unrtf
 vim
 whois
 
@@ -83,6 +87,7 @@ winff-lang
 cherrytree
 cherrytree-lang
 kwrite
+recoll
 
 # Jeux
 aisleriot

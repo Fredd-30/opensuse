@@ -23,7 +23,9 @@ VERSION=15.0
 MIRROR="http://download.opensuse.org"
 NVIDIA="https://download.nvidia.com"
 PACKMAN="http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Leap_${VERSION}/"
+KDEXTRA="https://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_${VERSION}/"
 DVDCSS="http://opensuse-guide.org/repo/openSUSE_Leap_${VERSION}/"
+RECODE="https://download.opensuse.org/repositories/home:/manfred-h/openSUSE_Leap_${VERSION}/"
 
 # Couleurs
 VERT="\033[01;32m"
