@@ -58,6 +58,16 @@ Timeout=60
 EOF
 ok
 
+# Désactiver l'indexation des fichiers
+echo "::"
+echo -e ":: Désactivation de l'indexation des fichiers... \c"
+sleep $DELAY
+cat << EOF > /etc/skel/.config/baloofilerc
+[Basic Settings]
+Indexing-Enabled=false
+EOF
+ok
+
 # Menu par défaut
 echo "::"
 echo -e ":: Configuration du menu par défaut... \c"
