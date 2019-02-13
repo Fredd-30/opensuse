@@ -78,7 +78,7 @@ normalize
 openshot-qt
 transcode
 vlc
-vlc-codecs
+# vlc-codecs
 vlc-lang
 winff
 winff-lang
