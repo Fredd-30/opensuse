@@ -26,70 +26,69 @@ vim
 whois
 
 # Dépendances
-# python3-requests
-# wxWidgets-lang
+python3-requests
+wxWidgets-lang
 
 # KDE
-# fontforge
-# gos-wallpapers
-# plasma5-workspace-wallpapers
+fontforge
+gos-wallpapers
+plasma5-workspace-wallpapers
 
 # Internet
-# enigmail
-# filezilla
-# filezilla-lang
-# flash-player
-# MozillaThunderbird
-# MozillaThunderbird-translations-common
-# owncloud-client
-# owncloud-client-dolphin
-# pidgin
-# pidgin-plugin-otr
-# pidgin-plugin-otr-lang
-# transmission-gtk
-# transmission-gtk-lang
+enigmail
+filezilla
+filezilla-lang
+flash-player
+MozillaThunderbird
+MozillaThunderbird-translations-common
+owncloud-client
+owncloud-client-dolphin
+pidgin
+pidgin-plugin-otr
+pidgin-plugin-otr-lang
+transmission-gtk
+transmission-gtk-lang
 
 # Bureautique
-# scribus
+scribus
 
 # Graphisme
-# inkscape
-# inkscape-extensions-gimp
-# inkscape-lang
-# librecad
-# librecad-parts
+inkscape
+inkscape-extensions-gimp
+inkscape-lang
+librecad
+librecad-parts
 
 # Multimédia
-# asunder
-# asunder-lang
-# audacious
-# audacious-lang
-# audacious-plugins
-# audacious-plugins-lang
-# audacity
-# audacity-lang
-# cheese
-# cheese-lang
-# handbrake-gtk
-# handbrake-gtk-lang
-# libdvdcss2
-# MPlayer
-# normalize
-# openshot-qt
-# transcode
-# vlc
-# vlc-codecs
-# vlc-lang
-# winff
-# winff-lang
+asunder
+asunder-lang
+audacious
+audacious-lang
+audacious-plugins
+audacious-plugins-lang
+audacity
+audacity-lang
+cheese
+cheese-lang
+handbrake-gtk
+handbrake-gtk-lang
+libdvdcss2
+MPlayer
+normalize
+openshot-qt
+transcode
+vlc
+vlc-codecs
+vlc-lang
+winff
+winff-lang
 
 # Accessoires
-# cherrytree
-# cherrytree-lang
-# kwrite
-# recoll
+cherrytree
+cherrytree-lang
+recoll
 
 # Jeux
-# aisleriot
-# aisleriot-lang
-# aisleriot-themes
+aisleriot
+aisleriot-lang
+aisleriot-themes
