@@ -6,6 +6,7 @@ hugin
 kaddressbook
 kcm_tablet
 kgpg
+kleopatra
 kmag
 kmahjongg
 kmail

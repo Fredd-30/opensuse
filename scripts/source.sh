@@ -17,7 +17,7 @@ CWD=$(pwd)
 set -e
 
 # Version
-VERSION=15.0
+VERSION=15.1
 
 # Miroirs de téléchargement
 MIRROR="http://download.opensuse.org"
