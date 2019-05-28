@@ -72,16 +72,6 @@ Indexing-Enabled=false
 EOF
 ok
 
-# Menu par défaut
-if [ -f /usr/share/plasma/layout-templates/org.opensuse.desktop.defaultPanel/contents/layout.js ] ; then 
-  echo "::"
-  echo -e ":: Configuration du menu par défaut... \c"
-  sleep $DELAY
-  sed -i -e 's/org.kde.plasma.kicker/org.kde.plasma.kickoff/g' \
-    /usr/share/plasma/layout-templates/org.opensuse.desktop.defaultPanel/contents/layout.js
-  ok
-fi
-
 echo
 
 exit 0
