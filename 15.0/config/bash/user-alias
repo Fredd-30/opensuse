@@ -1,0 +1,24 @@
+# ~/.alias
+
+# Alias
+alias rm='rm -i'
+alias cp='cp -i'
+alias mv='mv -i'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias vi='vim'
+
+# PS1
+VERT='\[\033[0;32m\]'
+BLANC='\[\033[1;37m\]'
+GRIS='\[\033[0;m\]'
+PS1="$VERT[$BLANC\u$GRIS@$BLANC\h$GRIS:$BLANC\W$VERT] \$ $GRIS"
+
+# Vim 
+EDITOR=vim
+VISUAL=$EDITOR
+export EDITOR VISUAL
+
+
+
+

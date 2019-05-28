@@ -1,0 +1,40 @@
+============
+NVidia HOWTO (c) Nicolas Kovacs 2019
+============
+
+Ajouter le dépôt NVidia :
+
+  # zypper addrepo https://download.nvidia.com/opensuse/leap/15.0 nvidia
+  # zypper install-new-recommends --repo nvidia
+
+Chercher les pilotes disponibles :
+
+	# zypper search x11-video-nvidia
+	Chargement des données du dépôt...
+	Lecture des paquets installés...
+
+	S | Nom                 | Résumé                                                  | Type  
+	--+---------------------+---------------------------------------------------------+-------
+		| x11-video-nvidiaG03 | NVIDIA graphics driver for GeForce 8xxx and newer GPUs  | paquet
+		| x11-video-nvidiaG04 | NVIDIA graphics driver for GeForce 400 series and newer | paquet
+		| x11-video-nvidiaG05 | NVIDIA graphics driver for GeForce 400 series and newer | paquet
+
+Voir les versions respectives des pilotes :
+
+  # zypper search --details x11-video-nvidia
+  Chargement des données du dépôt...
+  Lecture des paquets installés...
+
+  S | Nom                 | Type   | Version            | Arch   | Dépôt 
+  --+---------------------+--------+--------------------+--------+-------
+    | x11-video-nvidiaG03 | paquet | 340.107-lp150.12.1 | x86_64 | nvidia
+    | x11-video-nvidiaG04 | paquet | 390.87-lp150.10.2  | x86_64 | nvidia
+    | x11-video-nvidiaG05 | paquet | 410.78-lp150.6.1   | x86_64 | nvidia
+
+Voir la bonne version du pilote sur le site de NVidia, puis :
+
+  # zypper install x11-video-nvidiaG05
+
+
+
+
