@@ -1,0 +1,16 @@
+Installer une imprimante HP OfficeJet Pro 6970.
+
+$ systemctl status cups
+
+OK.
+
+# zypper install hplip
+
+$ hp-plugin
+
+YaST > Matériel > Imprimante > Ajouter > Lancer hp-setup
+
+YaST > Matériel > Scanneur
+
+HP OfficeJet en surbrillance > Modifier > Paquet hplip > suivant.
+
