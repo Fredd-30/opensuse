@@ -53,6 +53,7 @@ transmission-gtk-lang
 scribus
 
 # Graphisme
+gimp-lang
 inkscape
 inkscape-extensions-gimp
 inkscape-lang
