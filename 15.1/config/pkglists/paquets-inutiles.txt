@@ -20,5 +20,6 @@ korganizer
 kpat
 kreversi
 ksudoku
+plasma5-pk-updates
 tigervnc
 
