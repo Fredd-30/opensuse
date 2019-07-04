@@ -34,9 +34,6 @@ Bureau KDE
   * Supprimer les raccourcis par défaut
   * Applications dans les Favoris
   * Applications sur le Tableau de bord
-  * Thème Air pour ultra-portables
-  * Conky
-  * KDE NetworkManager
   * Dispositions clavier X11
 
 
