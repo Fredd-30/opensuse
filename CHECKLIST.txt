@@ -10,13 +10,10 @@ Système
   * Synchronisation dépôt Git
   * Synchronisation RAID
   * Configuration IPv4 
-  * Désactivation IPv6
-  * Logs persistants 
   * Personnalisation du shell
   * Messages au démarrage
   * Configuration dépôts de paquets
   * Mise à jour initiale
-  * Outils supplémentaires
   * Paquets inutiles
   * Synchronisation NTP
   * Disposition clavier console
@@ -34,7 +31,7 @@ Bureau KDE
 ----------
 
   * Fond d'écran potable
-  * Configuration Vue de dossier
+  * Supprimer les raccourcis par défaut
   * Applications dans les Favoris
   * Applications sur le Tableau de bord
   * Thème Air pour ultra-portables
