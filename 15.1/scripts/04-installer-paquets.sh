@@ -18,7 +18,8 @@ echo
 for PAQUET in $EXTRAS; do
   if ! rpm -q $PAQUET 2>&1 > /dev/null ; then
     echo -e ":: Installation du paquet $PAQUET... \c"
-    zypper --non-interactive install --no-recommends $PAQUET >> $LOG 2>&1
+    zypper --non-interactive install --no-recommends \
+      --allow-vendor-change $PAQUET >> $LOG 2>&1
     ok
     echo "::"
   fi

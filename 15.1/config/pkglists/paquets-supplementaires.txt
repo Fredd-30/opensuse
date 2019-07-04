@@ -53,6 +53,9 @@ transmission-gtk-lang
 scribus
 
 # Graphisme
+digikam
+digikam-lang
+digikam-plugins
 gimp-lang
 inkscape
 inkscape-extensions-gimp
