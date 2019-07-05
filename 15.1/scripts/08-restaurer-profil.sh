@@ -31,7 +31,12 @@ echo
 
 for UTILISATEUR in $(ls /home); do
   echo ":: Mise à jour du profil de l'utilisateur $UTILISATEUR."
+  rm -rf /home/$UTILISATEUR/.cache
   rm -rf /home/$UTILISATEUR/.config
+  rm -rf /home/$UTILISATEUR/.gnome2
+  rm -rf /home/$UTILISATEUR/.kde
+  rm -rf /home/$UTILISATEUR/.local
+  rm -rf /home/$UTILISATEUR/.nv
   cp -R /etc/skel/.config /home/$UTILISATEUR/
   if [ "$SYSTEM" == "CentOS" ]; then 
     chown -R $UTILISATEUR:$UTILISATEUR /home/$UTILISATEUR/.config
