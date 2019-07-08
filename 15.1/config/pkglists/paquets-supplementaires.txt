@@ -62,6 +62,8 @@ inkscape-extensions-gimp
 inkscape-lang
 librecad
 librecad-parts
+simple-scan
+simple-scan-lang
 
 # Multimédia
 asunder

@@ -21,5 +21,6 @@ kpat
 kreversi
 ksudoku
 plasma5-pk-updates
+skanlite
 tigervnc
 
