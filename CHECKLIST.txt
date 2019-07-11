@@ -19,6 +19,7 @@ Système
   * Configuration IPv4 
   * Personnalisation du shell
   * Messages au démarrage
+  * CPU Mitigations désactivé
   * Configuration dépôts de paquets
   * Mise à jour initiale
   * Paquets inutiles
