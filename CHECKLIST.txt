@@ -2,6 +2,13 @@
 Checklist OpenSUSE Leap (c) Nicolas Kovacs 2019
 =======================
 
+BIOS
+----
+
+  * Mot de passe BIOS
+  * Démarrer uniquement sur le disque dur
+  * Désactiver Intel SpeedStep
+  * Désactiver C-States
 
 Système
 -------
