@@ -9,7 +9,7 @@ Icon=okular
 Type=Application
 X-DocPath=okular/index.html
 InitialPreference=7
-Categories=Office;
+Categories=Office;Graphics;
 MimeType=application/vnd.kde.okular-archive;
 X-DBUS-ServiceName=org.kde.okular
 
