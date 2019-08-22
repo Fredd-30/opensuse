@@ -26,6 +26,7 @@ vim
 whois
 
 # Dépendances
+python2-dbus-python
 python3-requests
 wxWidgets-lang
 
