@@ -22,55 +22,55 @@ ok
 # Configuration du dépôt [oss]
 echo "::"
 echo -e ":: Configuration du dépôt [oss]... \c"
-zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/oss oss >> $LOG 2>&1
+zypper addrepo -k $MIRROR/distribution/leap/$VERSION/repo/oss oss >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [non-oss]
 echo "::"
 echo -e ":: Configuration du dépôt [non-oss]... \c"
-zypper addrepo $MIRROR/distribution/leap/$VERSION/repo/non-oss non-oss >> $LOG 2>&1
+zypper addrepo -k $MIRROR/distribution/leap/$VERSION/repo/non-oss non-oss >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [oss-updates]
 echo "::"
 echo -e ":: Configuration du dépôt [oss-updates]... \c"
-zypper addrepo $MIRROR/update/leap/$VERSION/oss oss-updates >> $LOG 2>&1
+zypper addrepo -k $MIRROR/update/leap/$VERSION/oss oss-updates >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [non-oss-updates]
 echo "::"
 echo -e ":: Configuration du dépôt [non-oss-updates]... \c"
-zypper addrepo $MIRROR/update/leap/$VERSION/non-oss non-oss-updates >> $LOG 2>&1
+zypper addrepo -k $MIRROR/update/leap/$VERSION/non-oss non-oss-updates >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [nvidia]
 echo "::"
 echo -e ":: Configuration du dépôt [nvidia]... \c"
-zypper addrepo $NVIDIA/opensuse/leap/$VERSION nvidia >> $LOG 2>&1
+zypper addrepo -k $NVIDIA/opensuse/leap/$VERSION nvidia >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [packman]
 echo "::"
 echo -e ":: Configuration du dépôt [packman]... \c"
-zypper addrepo --priority 90 $PACKMAN packman >> $LOG 2>&1
+zypper addrepo -k --priority 90 $PACKMAN packman >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [dvdcss]
 echo "::"
 echo -e ":: Configuration du dépôt [dvdcss]... \c"
-zypper addrepo $DVDCSS dvdcss >> $LOG 2>&1
+zypper addrepo -k $DVDCSS dvdcss >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [recode]
 echo "::"
 echo -e ":: Configuration du dépôt [recode]... \c"
-zypper addrepo --priority 100 $RECODE recode >> $LOG 2>&1
+zypper addrepo -k --priority 100 $RECODE recode >> $LOG 2>&1
 ok
 
 # Configuration du dépôt [kde]
 echo "::"
 echo -e ":: Configuration du dépôt [kde]... \c"
-zypper addrepo --priority 100 $KDEXTRA kde >> $LOG 2>&1
+zypper addrepo -k --priority 100 $KDEXTRA kde >> $LOG 2>&1
 ok
 
 
