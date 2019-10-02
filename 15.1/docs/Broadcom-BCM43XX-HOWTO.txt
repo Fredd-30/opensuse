@@ -1,0 +1,25 @@
+======================
+Broadcom BCM43XX HOWTO (c) Nicolas Kovacs 2019
+======================
+
+Ce HOWTO décrit la configuration d'une carte Wi-Fi BCM43XX sous OpenSUSE Leap.
+
+Identifier la carte :
+
+  # lspci | grep -i network
+  02:00.0 Network controller: Broadcom Limited BCM43228 802.11a/b/g/n
+
+Installer les outils nécessaires :
+
+  # zypper install b43-fwcutter
+
+Récupérer le firmware :
+
+  # install_bcm43xx_firmware
+
+Blacklister le pilote libre :
+
+  # zypper addlock broadcom-wl
+  # zypper addlock broadcom-wl-kmp-default
+
+Redémarrer.
