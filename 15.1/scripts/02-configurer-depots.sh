@@ -73,6 +73,11 @@ echo -e ":: Configuration du dépôt [kde]... \c"
 zypper addrepo -k --priority 100 $KDEXTRA kde >> $LOG 2>&1
 ok
 
+# Configuration du dépôt [vagrant]
+echo "::"
+echo -e ":: Configuration du dépôt [vagrant]... \c"
+zypper addrepo -k --priority 90 $VAGRANT vagrant >> $LOG 2>&1
+ok
 
 # Synchronisation et import des clés GPG
 echo "::"
