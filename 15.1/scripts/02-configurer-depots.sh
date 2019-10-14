@@ -79,6 +79,13 @@ echo -e ":: Configuration du dépôt [vagrant]... \c"
 zypper addrepo -k --priority 90 $VAGRANT vagrant >> $LOG 2>&1
 ok
 
+# Configuration du dépôt [sublime]
+echo "::"
+echo -e ":: Configuration du dépôt [sublime]... \c"
+rpm -v --import ${SUBLIME}/sublimehq-rpm-pub.gpg >> $LOG 2>&1
+zypper addrepo -k ${SUBLIME}/rpm/dev/x86_64/sublime-text.repo >> $LOG 2>&1
+ok
+
 # Synchronisation et import des clés GPG
 echo "::"
 echo -e ":: Synchronisation et import des clés GPG... \c"

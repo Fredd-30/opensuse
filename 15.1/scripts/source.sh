@@ -27,6 +27,7 @@ KDEXTRA="https://download.opensuse.org/repositories/KDE:/Extra/openSUSE_Leap_${V
 DVDCSS="http://opensuse-guide.org/repo/openSUSE_Leap_${VERSION}/"
 RECODE="https://download.opensuse.org/repositories/home:/manfred-h/openSUSE_Leap_${VERSION}/"
 VAGRANT="https://download.opensuse.org/repositories/Virtualization:/vagrant/openSUSE_Leap_${VERSION}/"
+SUBLIME="https://download.sublimetext.com"
 
 # Couleurs
 VERT="\033[01;32m"
